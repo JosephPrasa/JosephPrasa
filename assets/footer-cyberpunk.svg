@@ -1,0 +1,68 @@
+<svg viewBox="0 0 900 120" width="100%" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06070d"/>
+      <stop offset="50%" stop-color="#0e101d"/>
+      <stop offset="100%" stop-color="#140824"/>
+    </linearGradient>
+
+    <linearGradient id="footerGlowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff">
+        <animate attributeName="stop-color" values="#00f3ff;#ff007f;#9d4edd;#00f3ff" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f;#9d4edd;#00f3ff;#ff007f" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#00f3ff">
+        <animate attributeName="stop-color" values="#9d4edd;#00f3ff;#ff007f;#9d4edd" dur="7s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="laserBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff007f" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="footerGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <!-- Box -->
+  <rect x="2" y="2" width="896" height="116" rx="14" fill="url(#footerBg)"/>
+  <rect x="2" y="2" width="896" height="116" rx="14" fill="url(#footerGrid)"/>
+
+  <!-- Top Glowing Cyber Edge -->
+  <line x1="2" y1="2" x2="898" y2="2" stroke="url(#footerGlowGrad)" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Laser Sweep -->
+  <line x1="-200" y1="2" x2="0" y2="2" stroke="url(#laserBeam)" stroke-width="3">
+    <animate attributeName="x1" from="-300" to="900" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" from="-100" to="1100" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Quote -->
+  <text x="450" y="44" text-anchor="middle" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-style="italic" letter-spacing="1">
+    "Great software isn't just coded — it is designed, engineered, and continuously refined."
+  </text>
+
+  <!-- Signature -->
+  <g transform="translate(450, 78)" text-anchor="middle" font-family="'Segoe UI', -apple-system, Roboto, sans-serif">
+    <text x="0" y="0" fill="url(#footerGlowGrad)" font-size="13" font-weight="800" letter-spacing="3">
+      CRAFTED BY JOSEPH PRASA • 2026
+    </text>
+  </g>
+
+  <!-- Status pill bottom -->
+  <g transform="translate(360, 92)">
+    <circle cx="10" cy="8" r="3" fill="#00f3ff">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="22" y="11" fill="#64748b" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5">
+      TRANSMISSION COMPLETE // ALL REPOSITORIES DEPLOYED
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,158 @@
+<svg viewBox="0 0 900 240" width="100%" height="240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06070d"/>
+      <stop offset="30%" stop-color="#0b0d19"/>
+      <stop offset="70%" stop-color="#150826"/>
+      <stop offset="100%" stop-color="#070c18"/>
+    </linearGradient>
+
+    <!-- Animated Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff">
+        <animate attributeName="stop-color" values="#00f3ff;#ff007f;#9d4edd;#00f3ff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f;#9d4edd;#00f3ff;#ff007f" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#9d4edd">
+        <animate attributeName="stop-color" values="#9d4edd;#00f3ff;#ff007f;#9d4edd" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff">
+        <animate attributeName="stop-color" values="#00f3ff;#ff007f;#00f3ff" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#9d4edd"/>
+      <stop offset="100%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f;#00f3ff;#ff007f" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Scanning Laser Gradient -->
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f3ff" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#ff007f" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Radial Glow Cyan -->
+    <radialGradient id="glowCyan" cx="20%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Radial Glow Magenta -->
+    <radialGradient id="glowMagenta" cx="80%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cyber Grid Pattern -->
+    <pattern id="cyberGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f3ff" stroke-width="0.6" stroke-opacity="0.08"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feGaussianBlur stdDeviation="15" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes floatText {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes pulseLight {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 0.9; }
+    }
+    .floating-title {
+      animation: floatText 4s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .pulse-glow {
+      animation: pulseLight 3s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="896" height="236" rx="16" fill="url(#cyberBg)"/>
+  
+  <!-- Cyber Grid Overlay -->
+  <rect x="2" y="2" width="896" height="236" rx="16" fill="url(#cyberGrid)"/>
+
+  <!-- Atmospheric Glows -->
+  <rect x="2" y="2" width="896" height="236" rx="16" fill="url(#glowCyan)" class="pulse-glow"/>
+  <rect x="2" y="2" width="896" height="236" rx="16" fill="url(#glowMagenta)" class="pulse-glow"/>
+
+  <!-- Shimmering Border -->
+  <rect x="2" y="2" width="896" height="236" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="1.8">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Laser Top Scanning Beam -->
+  <line x1="-300" y1="2" x2="0" y2="2" stroke="url(#laserGrad)" stroke-width="3">
+    <animate attributeName="x1" from="-400" to="900" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" from="-100" to="1200" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Top Status Badge -->
+  <g transform="translate(325, 22)">
+    <rect x="0" y="0" width="250" height="28" rx="14" fill="#00f3ff" fill-opacity="0.08" stroke="#00f3ff" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="16" cy="14" r="4.5" fill="#00f3ff">
+      <animate attributeName="r" values="3.5;5;3.5" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="32" y="18" fill="#00f3ff" font-family="'Segoe UI', Roboto, -apple-system, sans-serif" font-size="10.5" font-weight="700" letter-spacing="2">SYSTEM ONLINE • CORE ACTIVE</text>
+  </g>
+
+  <!-- Main Hero Name -->
+  <g class="floating-title">
+    <text x="450" y="116" text-anchor="middle" fill="url(#textGrad)" font-family="'Segoe UI', -apple-system, Roboto, Ubuntu, sans-serif" font-size="46" font-weight="900" letter-spacing="6" filter="url(#neonGlow)">JOSEPH PRASA</text>
+  </g>
+
+  <!-- Subtitle with Neon Bullets -->
+  <g transform="translate(450, 150)" text-anchor="middle" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="2.5">
+    <text x="-210" y="0" fill="#00f3ff">FULL STACK</text>
+    <text x="-135" y="-1" fill="#ff007f" font-size="10">◆</text>
+    <text x="-35" y="0" fill="#ff007f">MERN SPECIALIST</text>
+    <text x="65" y="-1" fill="#9d4edd" font-size="10">◆</text>
+    <text x="180" y="0" fill="#a855f7">SYSTEMS &amp; CLOUD</text>
+  </g>
+
+  <!-- Tech Highlights Pills Row -->
+  <g transform="translate(110, 182)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="150" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.35"/>
+      <text x="75" y="17" text-anchor="middle" fill="#7dd3fc" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">C / C++ • PYTHON</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(170, 0)">
+      <rect x="0" y="0" width="165" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#ff007f" stroke-width="0.8" stroke-opacity="0.35"/>
+      <text x="82.5" y="17" text-anchor="middle" fill="#f472b6" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">REACT • VITE • TAILWIND</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(355, 0)">
+      <rect x="0" y="0" width="165" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#9d4edd" stroke-width="0.8" stroke-opacity="0.35"/>
+      <text x="82.5" y="17" text-anchor="middle" fill="#c084fc" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">NODE • EXPRESS • FLUTTER</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(540, 0)">
+      <rect x="0" y="0" width="140" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.35"/>
+      <text x="70" y="17" text-anchor="middle" fill="#38bdf8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">AWS • POSTGRES • MONGO</text>
+    </g>
+  </g>
+</svg>
