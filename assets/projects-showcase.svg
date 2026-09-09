@@ -1,0 +1,189 @@
+<svg viewBox="0 0 960 380" width="100%" height="380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="projBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04050d"/>
+      <stop offset="50%" stop-color="#080a1a"/>
+      <stop offset="100%" stop-color="#140827"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="projBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#ff007f;#7928ca;#00f2fe" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#7928ca"/>
+      <stop offset="100%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f;#00f2fe;#7928ca;#ff007f" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Project Card Glass Fill -->
+    <linearGradient id="projGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="2" y="2" width="956" height="376" rx="18" fill="url(#projBg)"/>
+  <rect x="2" y="2" width="956" height="376" rx="18" fill="none" stroke="url(#projBorder)" stroke-width="1.8">
+    <animate attributeName="stroke-opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Section Header -->
+  <g transform="translate(26, 22)">
+    <rect x="0" y="0" width="180" height="22" rx="6" fill="#ff007f" fill-opacity="0.1" stroke="#ff007f" stroke-width="0.8"/>
+    <text x="12" y="15" fill="#ff007f" font-family="'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="1.5">FLAGSHIP PRODUCTIONS</text>
+    <text x="0" y="44" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800" letter-spacing="2">ENGINEERED SOFTWARE &amp; AI BUILDS</text>
+  </g>
+
+  <!-- ================= 2x2 PROJECT GRID ================= -->
+  <!-- Project 1: AxNote (Top Left) -->
+  <g transform="translate(26, 78)">
+    <rect x="0" y="0" width="444" height="135" rx="12" fill="url(#projGlass)" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.3"/>
+    
+    <!-- Title & Status -->
+    <text x="18" y="28" fill="#ffffff" font-family="'Inter', sans-serif" font-size="16" font-weight="800">📓 AxNote</text>
+    <rect x="330" y="12" width="96" height="20" rx="10" fill="#00f2fe" fill-opacity="0.12" stroke="#00f2fe" stroke-width="0.8"/>
+    <circle cx="342" cy="22" r="3" fill="#00f2fe"/>
+    <text x="350" y="26" fill="#00f2fe" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="1">ACTIVE BUILD</text>
+
+    <!-- Subtitle -->
+    <text x="18" y="48" fill="#00f2fe" font-family="'Inter', sans-serif" font-size="11" font-weight="700">Intelligent AI-Enhanced Notes &amp; Knowledge Workspace</text>
+    
+    <!-- Description -->
+    <text x="18" y="68" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10.5" font-weight="400">
+      Distraction-free smart markdown workspace with semantic search,
+    </text>
+    <text x="18" y="84" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10.5" font-weight="400">
+      cloud synchronization, and automated AI note summarization.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(18, 102)" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700">
+      <rect x="0" y="0" width="55" height="18" rx="4" fill="#00f2fe" fill-opacity="0.15"/>
+      <text x="27.5" y="13" text-anchor="middle" fill="#7dd3fc">REACT</text>
+
+      <rect x="62" y="0" width="62" height="18" rx="4" fill="#ff007f" fill-opacity="0.15"/>
+      <text x="93" y="13" text-anchor="middle" fill="#f472b6">NODE.JS</text>
+
+      <rect x="131" y="0" width="70" height="18" rx="4" fill="#7928ca" fill-opacity="0.2"/>
+      <text x="166" y="13" text-anchor="middle" fill="#c084fc">MONGODB</text>
+
+      <rect x="208" y="0" width="80" height="18" rx="4" fill="#00f2fe" fill-opacity="0.15"/>
+      <text x="248" y="13" text-anchor="middle" fill="#7dd3fc">OPENAI API</text>
+    </g>
+  </g>
+
+  <!-- Project 2: Online Assignment Evaluation System (Top Right) -->
+  <g transform="translate(490, 78)">
+    <rect x="0" y="0" width="444" height="135" rx="12" fill="url(#projGlass)" stroke="#ff007f" stroke-width="1" stroke-opacity="0.3"/>
+    
+    <!-- Title & Status -->
+    <text x="18" y="28" fill="#ffffff" font-family="'Inter', sans-serif" font-size="15" font-weight="800">🎓 Online Assignment Eval</text>
+    <rect x="335" y="12" width="90" height="20" rx="10" fill="#ff007f" fill-opacity="0.12" stroke="#ff007f" stroke-width="0.8"/>
+    <circle cx="347" cy="22" r="3" fill="#ff007f"/>
+    <text x="355" y="26" fill="#ff007f" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="1">DEPLOYED</text>
+
+    <!-- Subtitle -->
+    <text x="18" y="48" fill="#ff007f" font-family="'Inter', sans-serif" font-size="11" font-weight="700">Automated Academic Assessment &amp; Code Grading Engine</text>
+    
+    <!-- Description -->
+    <text x="18" y="68" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10.5" font-weight="400">
+      Accepts student code submissions, executes isolated test suites,
+    </text>
+    <text x="18" y="84" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10.5" font-weight="400">
+      scores syntax &amp; runtime, and delivers real-time grading analytics.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(18, 102)" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700">
+      <rect x="0" y="0" width="60" height="18" rx="4" fill="#ff007f" fill-opacity="0.15"/>
+      <text x="30" y="13" text-anchor="middle" fill="#f472b6">PYTHON</text>
+
+      <rect x="67" y="0" width="62" height="18" rx="4" fill="#00f2fe" fill-opacity="0.15"/>
+      <text x="98" y="13" text-anchor="middle" fill="#7dd3fc">FASTAPI</text>
+
+      <rect x="136" y="0" width="75" height="18" rx="4" fill="#7928ca" fill-opacity="0.2"/>
+      <text x="173.5" y="13" text-anchor="middle" fill="#c084fc">POSTGRES</text>
+
+      <rect x="218" y="0" width="70" height="18" rx="4" fill="#ff007f" fill-opacity="0.15"/>
+      <text x="253" y="13" text-anchor="middle" fill="#f472b6">TAILWIND</text>
+    </g>
+  </g>
+
+  <!-- Project 3: Safe-Haven-System (Bottom Left) -->
+  <g transform="translate(26, 225)">
+    <rect x="0" y="0" width="444" height="135" rx="12" fill="url(#projGlass)" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.3"/>
+    
+    <!-- Title & Status -->
+    <text x="18" y="28" fill="#ffffff" font-family="'Inter', sans-serif" font-size="16" font-weight="800">🛡️ Safe-Haven-System</text>
+    <rect x="300" y="12" width="126" height="20" rx="10" fill="#00f2fe" fill-opacity="0.12" stroke="#00f2fe" stroke-width="0.8"/>
+    <circle cx="312" cy="22" r="3" fill="#00f2fe"/>
+    <text x="320" y="26" fill="#00f2fe" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="1">MISSION CRITICAL</text>
+
+    <!-- Subtitle -->
+    <text x="18" y="48" fill="#00f2fe" font-family="'Inter', sans-serif" font-size="11" font-weight="700">Intelligent Community Safety &amp; Emergency Alert Network</text>
+    
+    <!-- Description -->
+    <text x="18" y="68" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10.5" font-weight="400">
+      Real-time emergency management platform with live GPS SOS tracking,
+    </text>
+    <text x="18" y="84" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10.5" font-weight="400">
+      automated responder dispatching, and broadcast incident telemetry.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(18, 102)" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700">
+      <rect x="0" y="0" width="62" height="18" rx="4" fill="#00f2fe" fill-opacity="0.15"/>
+      <text x="31" y="13" text-anchor="middle" fill="#7dd3fc">FLUTTER</text>
+
+      <rect x="69" y="0" width="65" height="18" rx="4" fill="#7928ca" fill-opacity="0.2"/>
+      <text x="101.5" y="13" text-anchor="middle" fill="#c084fc">EXPRESS</text>
+
+      <rect x="141" y="0" width="60" height="18" rx="4" fill="#ff007f" fill-opacity="0.15"/>
+      <text x="171" y="13" text-anchor="middle" fill="#f472b6">NODE.JS</text>
+
+      <rect x="208" y="0" width="55" height="18" rx="4" fill="#00f2fe" fill-opacity="0.15"/>
+      <text x="235.5" y="13" text-anchor="middle" fill="#7dd3fc">AWS S3</text>
+    </g>
+  </g>
+
+  <!-- Project 4: ReWear (Bottom Right) -->
+  <g transform="translate(490, 225)">
+    <rect x="0" y="0" width="444" height="135" rx="12" fill="url(#projGlass)" stroke="#7928ca" stroke-width="1" stroke-opacity="0.3"/>
+    
+    <!-- Title & Status -->
+    <text x="18" y="28" fill="#ffffff" font-family="'Inter', sans-serif" font-size="16" font-weight="800">♻️ ReWear</text>
+    <rect x="315" y="12" width="110" height="20" rx="10" fill="#7928ca" fill-opacity="0.2" stroke="#7928ca" stroke-width="0.8"/>
+    <circle cx="327" cy="22" r="3" fill="#c084fc"/>
+    <text x="335" y="26" fill="#c084fc" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="1">ECO-INITIATIVE</text>
+
+    <!-- Subtitle -->
+    <text x="18" y="48" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11" font-weight="700">Sustainable Fashion &amp; Wardrobe Circular Exchange SaaS</text>
+    
+    <!-- Description -->
+    <text x="18" y="68" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10.5" font-weight="400">
+      Peer-to-peer pre-loved clothing exchange marketplace promoting
+    </text>
+    <text x="18" y="84" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10.5" font-weight="400">
+      textile waste reduction and personal carbon savings calculation.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(18, 102)" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700">
+      <rect x="0" y="0" width="55" height="18" rx="4" fill="#7928ca" fill-opacity="0.2"/>
+      <text x="27.5" y="13" text-anchor="middle" fill="#c084fc">MERN</text>
+
+      <rect x="62" y="0" width="55" height="18" rx="4" fill="#00f2fe" fill-opacity="0.15"/>
+      <text x="89.5" y="13" text-anchor="middle" fill="#7dd3fc">REACT</text>
+
+      <rect x="124" y="0" width="45" height="18" rx="4" fill="#ff007f" fill-opacity="0.15"/>
+      <text x="146.5" y="13" text-anchor="middle" fill="#f472b6">VITE</text>
+
+      <rect x="176" y="0" width="60" height="18" rx="4" fill="#7928ca" fill-opacity="0.2"/>
+      <text x="206" y="13" text-anchor="middle" fill="#c084fc">AWS S3</text>
+    </g>
+  </g>
+</svg>

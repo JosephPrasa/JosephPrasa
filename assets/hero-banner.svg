@@ -1,0 +1,188 @@
+<svg viewBox="0 0 960 320" width="100%" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Deep Space Obsidian Gradient -->
+    <linearGradient id="obsidianBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04050c"/>
+      <stop offset="35%" stop-color="#080a18"/>
+      <stop offset="70%" stop-color="#120726"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+
+    <!-- Animated Name Gradient -->
+    <linearGradient id="auroraName" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#4facfe;#9b51e0;#ff007f;#00f2fe" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="30%" stop-color="#4facfe">
+        <animate attributeName="stop-color" values="#4facfe;#9b51e0;#ff007f;#00f2fe;#4facfe" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="70%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f;#00f2fe;#4facfe;#9b51e0;#ff007f" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#4facfe;#9b51e0;#ff007f;#00f2fe" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Glowing Border Gradient -->
+    <linearGradient id="neonBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#ff007f;#7928ca;#00f2fe" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#7928ca"/>
+      <stop offset="100%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f;#00f2fe;#7928ca;#ff007f" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Scanning Laser -->
+    <linearGradient id="laserStream" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00f2fe" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#ff007f" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7928ca" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Radial Glowing Orbs -->
+    <radialGradient id="cyanCore" cx="20%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pinkCore" cx="80%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetCore" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#9b51e0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#9b51e0" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cyber Grid Pattern -->
+    <pattern id="gridMatrix" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#00f2fe" stroke-width="0.6" stroke-opacity="0.08"/>
+      <circle cx="32" cy="0" r="1" fill="#00f2fe" fill-opacity="0.2"/>
+    </pattern>
+
+    <!-- Heavy Glow Filter -->
+    <filter id="heavyGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="16" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes floatHero {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes pulseMesh {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 0.8; }
+    }
+    @keyframes rotateRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes pulseCore {
+      0%, 100% { r: 3.5; opacity: 0.7; }
+      50% { r: 5.5; opacity: 1; }
+    }
+    .hero-title {
+      animation: floatHero 4s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .pulsing-orb {
+      animation: pulseMesh 4s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="956" height="316" rx="22" fill="url(#obsidianBg)"/>
+  <rect x="2" y="2" width="956" height="316" rx="22" fill="url(#gridMatrix)"/>
+
+  <!-- Atmospheric Dynamic Orbs -->
+  <rect x="2" y="2" width="956" height="316" rx="22" fill="url(#cyanCore)" class="pulsing-orb"/>
+  <rect x="2" y="2" width="956" height="316" rx="22" fill="url(#pinkCore)" class="pulsing-orb"/>
+  <rect x="2" y="2" width="956" height="316" rx="22" fill="url(#violetCore)"/>
+
+  <!-- Outer Shimmering Glowing Border -->
+  <rect x="2" y="2" width="956" height="316" rx="22" fill="none" stroke="url(#neonBorder)" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Top Laser Beam Sweep -->
+  <line x1="-300" y1="2" x2="0" y2="2" stroke="url(#laserStream)" stroke-width="3.5">
+    <animate attributeName="x1" from="-400" to="960" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="x2" from="-100" to="1260" dur="4.2s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Corner HUD Accents -->
+  <path d="M 24 16 L 16 16 L 16 24" fill="none" stroke="#00f2fe" stroke-width="2.5" stroke-opacity="0.8"/>
+  <path d="M 936 16 L 944 16 L 944 24" fill="none" stroke="#ff007f" stroke-width="2.5" stroke-opacity="0.8"/>
+  <path d="M 16 296 L 16 304 L 24 304" fill="none" stroke="#00f2fe" stroke-width="2.5" stroke-opacity="0.8"/>
+  <path d="M 944 296 L 944 304 L 936 304" fill="none" stroke="#ff007f" stroke-width="2.5" stroke-opacity="0.8"/>
+
+  <!-- Top Status Pill -->
+  <g transform="translate(325, 26)">
+    <rect x="0" y="0" width="310" height="30" rx="15" fill="#00f2fe" fill-opacity="0.09" stroke="#00f2fe" stroke-width="1.2" stroke-opacity="0.5"/>
+    <circle cx="18" cy="15" r="4.5" fill="#00f2fe">
+      <animate attributeName="r" values="3.5;5.5;3.5" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="19" fill="#00f2fe" font-family="'Inter', -apple-system, Roboto, sans-serif" font-size="10.5" font-weight="800" letter-spacing="2.5">AI SYSTEMS &bull; NEURAL CORE ONLINE</text>
+  </g>
+
+  <!-- Central Orbital Geometric Accent -->
+  <g transform="translate(480, 138)">
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#00f2fe" stroke-width="0.6" stroke-opacity="0.25" stroke-dasharray="4 6"/>
+    <circle cx="0" cy="0" r="105" fill="none" stroke="#ff007f" stroke-width="0.6" stroke-opacity="0.2" stroke-dasharray="6 8"/>
+  </g>
+
+  <!-- Large Animated Hero Typography -->
+  <g class="hero-title">
+    <text x="480" y="146" text-anchor="middle" fill="url(#auroraName)" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="58" font-weight="900" letter-spacing="9" filter="url(#heavyGlow)">PRASANTH P</text>
+  </g>
+
+  <!-- Dynamic Roles Subtitle -->
+  <g transform="translate(480, 192)" text-anchor="middle" font-family="'Inter', -apple-system, Roboto, sans-serif" font-size="13.5" font-weight="800" letter-spacing="3.5">
+    <text x="-240" y="0" fill="#00f2fe">AI ENGINEER</text>
+    <text x="-150" y="-1" fill="#ff007f" font-size="11">✦</text>
+    <text x="-10" y="0" fill="#ff007f">FULL STACK DEVELOPER</text>
+    <text x="135" y="-1" fill="#9b51e0" font-size="11">✦</text>
+    <text x="245" y="0" fill="#c084fc">BACKEND ARCHITECT</text>
+  </g>
+
+  <!-- Tech Arsenal Pills Deck -->
+  <g transform="translate(80, 236)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="180" height="32" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="90" y="20" text-anchor="middle" fill="#7dd3fc" font-family="'Inter', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">AI AGENTS &bull; LLM APPS</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(205, 0)">
+      <rect x="0" y="0" width="195" height="32" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#ff007f" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="97.5" y="20" text-anchor="middle" fill="#f472b6" font-family="'Inter', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">MERN STACK &bull; FASTAPI</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(425, 0)">
+      <rect x="0" y="0" width="185" height="32" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#9b51e0" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="92.5" y="20" text-anchor="middle" fill="#c084fc" font-family="'Inter', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">AWS CLOUD &bull; DOCKER</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(635, 0)">
+      <rect x="0" y="0" width="165" height="32" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="82.5" y="20" text-anchor="middle" fill="#38bdf8" font-family="'Inter', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">ECE GRADUATE (B.E.)</text>
+    </g>
+  </g>
+
+  <!-- Bottom Interactive Coordinates -->
+  <g transform="translate(480, 298)" text-anchor="middle" font-family="'Fira Code', monospace" font-size="9.5" fill="#64748b" letter-spacing="2">
+    <text x="0" y="0">LATITUDE: 13.0827° N &bull; ARCHITECTURE: NEURAL-DISTRIBUTED &bull; CLEARANCE: LEVEL-5</text>
+  </g>
+</svg>

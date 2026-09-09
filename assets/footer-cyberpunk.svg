@@ -1,4 +1,4 @@
-<svg viewBox="0 0 900 120" width="100%" height="120" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 900 130" width="100%" height="130" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#06070d"/>
@@ -30,8 +30,8 @@
   </defs>
 
   <!-- Box -->
-  <rect x="2" y="2" width="896" height="116" rx="14" fill="url(#footerBg)"/>
-  <rect x="2" y="2" width="896" height="116" rx="14" fill="url(#footerGrid)"/>
+  <rect x="2" y="2" width="896" height="126" rx="14" fill="url(#footerBg)"/>
+  <rect x="2" y="2" width="896" height="126" rx="14" fill="url(#footerGrid)"/>
 
   <!-- Top Glowing Cyber Edge -->
   <line x1="2" y1="2" x2="898" y2="2" stroke="url(#footerGlowGrad)" stroke-width="2">
@@ -44,25 +44,25 @@
     <animate attributeName="x2" from="-100" to="1100" dur="5s" repeatCount="indefinite"/>
   </line>
 
-  <!-- Quote -->
-  <text x="450" y="44" text-anchor="middle" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-style="italic" letter-spacing="1">
-    "Great software isn't just coded — it is designed, engineered, and continuously refined."
+  <!-- Author Quote -->
+  <text x="450" y="46" text-anchor="middle" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-style="italic" letter-spacing="1">
+    "The best way to predict the future is to invent it." — Alan Kay
   </text>
 
-  <!-- Signature -->
-  <g transform="translate(450, 78)" text-anchor="middle" font-family="'Segoe UI', -apple-system, Roboto, sans-serif">
-    <text x="0" y="0" fill="url(#footerGlowGrad)" font-size="13" font-weight="800" letter-spacing="3">
-      CRAFTED BY JOSEPH PRASA • 2026
+  <!-- Signature: Prasanth P -->
+  <g transform="translate(450, 82)" text-anchor="middle" font-family="'Segoe UI', -apple-system, Roboto, sans-serif">
+    <text x="0" y="0" fill="url(#footerGlowGrad)" font-size="14" font-weight="800" letter-spacing="3">
+      DESIGNED &amp; ARCHITECTED BY PRASANTH P • 2026
     </text>
   </g>
 
   <!-- Status pill bottom -->
-  <g transform="translate(360, 92)">
+  <g transform="translate(355, 98)">
     <circle cx="10" cy="8" r="3" fill="#00f3ff">
       <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
     </circle>
     <text x="22" y="11" fill="#64748b" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5">
-      TRANSMISSION COMPLETE // ALL REPOSITORIES DEPLOYED
+      CORE TERMINATED // THANK YOU FOR VISITING MY REPO
     </text>
   </g>
 </svg>

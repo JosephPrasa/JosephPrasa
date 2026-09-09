@@ -40,13 +40,11 @@
       <stop offset="100%" stop-color="#ff007f" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Radial Glow Cyan -->
+    <!-- Radial Glows -->
     <radialGradient id="glowCyan" cx="20%" cy="20%" r="50%">
       <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
     </radialGradient>
-
-    <!-- Radial Glow Magenta -->
     <radialGradient id="glowMagenta" cx="80%" cy="80%" r="50%">
       <stop offset="0%" stop-color="#ff007f" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#ff007f" stop-opacity="0"/>
@@ -115,44 +113,44 @@
       <animate attributeName="r" values="3.5;5;3.5" dur="1.8s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="32" y="18" fill="#00f3ff" font-family="'Segoe UI', Roboto, -apple-system, sans-serif" font-size="10.5" font-weight="700" letter-spacing="2">SYSTEM ONLINE • CORE ACTIVE</text>
+    <text x="32" y="18" fill="#00f3ff" font-family="'Segoe UI', Roboto, -apple-system, sans-serif" font-size="10.5" font-weight="700" letter-spacing="2">SYSTEM ONLINE • PROFILE ACTIVE</text>
   </g>
 
-  <!-- Main Hero Name -->
+  <!-- Main Hero Name: PRASANTH P -->
   <g class="floating-title">
-    <text x="450" y="116" text-anchor="middle" fill="url(#textGrad)" font-family="'Segoe UI', -apple-system, Roboto, Ubuntu, sans-serif" font-size="46" font-weight="900" letter-spacing="6" filter="url(#neonGlow)">JOSEPH PRASA</text>
+    <text x="450" y="116" text-anchor="middle" fill="url(#textGrad)" font-family="'Segoe UI', -apple-system, Roboto, Ubuntu, sans-serif" font-size="48" font-weight="900" letter-spacing="6" filter="url(#neonGlow)">PRASANTH P</text>
   </g>
 
   <!-- Subtitle with Neon Bullets -->
   <g transform="translate(450, 150)" text-anchor="middle" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="2.5">
-    <text x="-210" y="0" fill="#00f3ff">FULL STACK</text>
+    <text x="-215" y="0" fill="#00f3ff">AI ENGINEER</text>
     <text x="-135" y="-1" fill="#ff007f" font-size="10">◆</text>
-    <text x="-35" y="0" fill="#ff007f">MERN SPECIALIST</text>
-    <text x="65" y="-1" fill="#9d4edd" font-size="10">◆</text>
-    <text x="180" y="0" fill="#a855f7">SYSTEMS &amp; CLOUD</text>
+    <text x="-15" y="0" fill="#ff007f">FULL STACK DEVELOPER</text>
+    <text x="110" y="-1" fill="#9d4edd" font-size="10">◆</text>
+    <text x="215" y="0" fill="#a855f7">BACKEND ARCHITECT</text>
   </g>
 
   <!-- Tech Highlights Pills Row -->
-  <g transform="translate(110, 182)">
+  <g transform="translate(85, 182)">
     <!-- Pill 1 -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="150" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.35"/>
-      <text x="75" y="17" text-anchor="middle" fill="#7dd3fc" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">C / C++ • PYTHON</text>
+      <rect x="0" y="0" width="165" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.35"/>
+      <text x="82.5" y="17" text-anchor="middle" fill="#7dd3fc" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">AI AGENTS • LLM APPS</text>
     </g>
     <!-- Pill 2 -->
-    <g transform="translate(170, 0)">
-      <rect x="0" y="0" width="165" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#ff007f" stroke-width="0.8" stroke-opacity="0.35"/>
-      <text x="82.5" y="17" text-anchor="middle" fill="#f472b6" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">REACT • VITE • TAILWIND</text>
+    <g transform="translate(180, 0)">
+      <rect x="0" y="0" width="180" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#ff007f" stroke-width="0.8" stroke-opacity="0.35"/>
+      <text x="90" y="17" text-anchor="middle" fill="#f472b6" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">MERN STACK • FASTAPI</text>
     </g>
     <!-- Pill 3 -->
-    <g transform="translate(355, 0)">
-      <rect x="0" y="0" width="165" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#9d4edd" stroke-width="0.8" stroke-opacity="0.35"/>
-      <text x="82.5" y="17" text-anchor="middle" fill="#c084fc" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">NODE • EXPRESS • FLUTTER</text>
+    <g transform="translate(375, 0)">
+      <rect x="0" y="0" width="170" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#9d4edd" stroke-width="0.8" stroke-opacity="0.35"/>
+      <text x="85" y="17" text-anchor="middle" fill="#c084fc" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">PYTHON • C/C++ • DOCKER</text>
     </g>
     <!-- Pill 4 -->
-    <g transform="translate(540, 0)">
-      <rect x="0" y="0" width="140" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.35"/>
-      <text x="70" y="17" text-anchor="middle" fill="#38bdf8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">AWS • POSTGRES • MONGO</text>
+    <g transform="translate(560, 0)">
+      <rect x="0" y="0" width="170" height="26" rx="13" fill="#ffffff" fill-opacity="0.04" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.35"/>
+      <text x="85" y="17" text-anchor="middle" fill="#38bdf8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">AWS • POSTGRES • MONGO</text>
     </g>
   </g>
 </svg>

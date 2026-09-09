@@ -1,0 +1,137 @@
+<svg viewBox="0 0 960 360" width="100%" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="techBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04050d"/>
+      <stop offset="50%" stop-color="#080a1a"/>
+      <stop offset="100%" stop-color="#120724"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="techBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#7928ca;#ff007f;#00f2fe" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#7928ca">
+        <animate attributeName="stop-color" values="#7928ca;#00f2fe;#ff007f;#7928ca" dur="7s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Column Panel Gradients -->
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Subtle Dots -->
+    <pattern id="techDots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#00f2fe" fill-opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Container -->
+  <rect x="2" y="2" width="956" height="356" rx="18" fill="url(#techBg)"/>
+  <rect x="2" y="2" width="956" height="356" rx="18" fill="url(#techDots)"/>
+  <rect x="2" y="2" width="956" height="356" rx="18" fill="none" stroke="url(#techBorder)" stroke-width="1.8">
+    <animate attributeName="stroke-opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Header Section in SVG -->
+  <g transform="translate(24, 22)">
+    <rect x="0" y="0" width="160" height="22" rx="6" fill="#00f2fe" fill-opacity="0.1" stroke="#00f2fe" stroke-width="0.8"/>
+    <text x="12" y="15" fill="#00f2fe" font-family="'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="1.5">TECH ARSENAL // 5 PILLARS</text>
+    <text x="0" y="44" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800" letter-spacing="2">CORE ARCHITECTURAL CAPABILITIES</text>
+  </g>
+
+  <!-- ================= 5 COLUMNS ================= -->
+  <!-- Col 1: Languages -->
+  <g transform="translate(24, 78)">
+    <rect x="0" y="0" width="170" height="260" rx="12" fill="url(#panelGrad)" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="0" y="0" width="170" height="36" rx="12" fill="#00f2fe" fill-opacity="0.12"/>
+    <text x="85" y="23" text-anchor="middle" fill="#00f2fe" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="1">💻 LANGUAGES</text>
+    
+    <g transform="translate(14, 52)" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0" line-height="24">
+      <text x="0" y="14">&bull; Python (AI Core)</text>
+      <text x="0" y="40">&bull; JavaScript (ES6+)</text>
+      <text x="0" y="66">&bull; TypeScript</text>
+      <text x="0" y="92">&bull; C / C++ (Systems)</text>
+      <text x="0" y="118">&bull; Java (OOP Core)</text>
+      <text x="0" y="144">&bull; PHP (Web APIs)</text>
+      <text x="0" y="170">&bull; SQL (Relational)</text>
+      <text x="0" y="196">&bull; Bash &amp; Linux CLI</text>
+    </g>
+  </g>
+
+  <!-- Col 2: Frontend & UI -->
+  <g transform="translate(208, 78)">
+    <rect x="0" y="0" width="170" height="260" rx="12" fill="url(#panelGrad)" stroke="#ff007f" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="0" y="0" width="170" height="36" rx="12" fill="#ff007f" fill-opacity="0.12"/>
+    <text x="85" y="23" text-anchor="middle" fill="#ff007f" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="1">🎨 FRONTEND</text>
+    
+    <g transform="translate(14, 52)" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">
+      <text x="0" y="14">&bull; React.js (SPAs)</text>
+      <text x="0" y="40">&bull; Vite (Next-Gen)</text>
+      <text x="0" y="66">&bull; Tailwind CSS</text>
+      <text x="0" y="92">&bull; Flutter (Mobile)</text>
+      <text x="0" y="118">&bull; Redux Toolkit</text>
+      <text x="0" y="144">&bull; HTML5 &amp; CSS3</text>
+      <text x="0" y="170">&bull; Responsive UI</text>
+      <text x="0" y="196">&bull; Modern Animations</text>
+    </g>
+  </g>
+
+  <!-- Col 3: Backend & APIs -->
+  <g transform="translate(392, 78)">
+    <rect x="0" y="0" width="170" height="260" rx="12" fill="url(#panelGrad)" stroke="#7928ca" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="0" y="0" width="170" height="36" rx="12" fill="#7928ca" fill-opacity="0.15"/>
+    <text x="85" y="23" text-anchor="middle" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="1">⚙️ BACKEND</text>
+    
+    <g transform="translate(14, 52)" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">
+      <text x="0" y="14">&bull; Node.js Runtime</text>
+      <text x="0" y="40">&bull; Express.js</text>
+      <text x="0" y="66">&bull; FastAPI (Async)</text>
+      <text x="0" y="92">&bull; RESTful APIs</text>
+      <text x="0" y="118">&bull; MERN Architecture</text>
+      <text x="0" y="144">&bull; Microservices</text>
+      <text x="0" y="170">&bull; JWT &amp; Auth Security</text>
+      <text x="0" y="196">&bull; High Concurrency</text>
+    </g>
+  </g>
+
+  <!-- Col 4: AI & ML -->
+  <g transform="translate(576, 78)">
+    <rect x="0" y="0" width="180" height="260" rx="12" fill="url(#panelGrad)" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="0" y="0" width="180" height="36" rx="12" fill="#00f2fe" fill-opacity="0.12"/>
+    <text x="90" y="23" text-anchor="middle" fill="#00f2fe" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="1">🧠 AI &amp; MACHINE LEARNING</text>
+    
+    <g transform="translate(14, 52)" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">
+      <text x="0" y="14">&bull; OpenAI API / GPT-4</text>
+      <text x="0" y="40">&bull; Hugging Face Hub</text>
+      <text x="0" y="66">&bull; Autonomous AI Agents</text>
+      <text x="0" y="92">&bull; LLM Fine-Tuning</text>
+      <text x="0" y="118">&bull; OpenAI Whisper (STT)</text>
+      <text x="0" y="144">&bull; Prompt Engineering</text>
+      <text x="0" y="170">&bull; PyTorch Foundations</text>
+      <text x="0" y="196">&bull; LangChain / Agents</text>
+    </g>
+  </g>
+
+  <!-- Col 5: Cloud & DevOps -->
+  <g transform="translate(770, 78)">
+    <rect x="0" y="0" width="166" height="260" rx="12" fill="url(#panelGrad)" stroke="#ff007f" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="0" y="0" width="166" height="36" rx="12" fill="#ff007f" fill-opacity="0.12"/>
+    <text x="83" y="23" text-anchor="middle" fill="#ff007f" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="1">☁️ CLOUD &amp; DATA</text>
+    
+    <g transform="translate(14, 52)" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" fill="#e2e8f0">
+      <text x="0" y="14">&bull; AWS Cloud Services</text>
+      <text x="0" y="40">&bull; Docker Containers</text>
+      <text x="0" y="66">&bull; PostgreSQL (SQL)</text>
+      <text x="0" y="92">&bull; MongoDB (NoSQL)</text>
+      <text x="0" y="118">&bull; Linux Environments</text>
+      <text x="0" y="144">&bull; Git &amp; GitHub VCS</text>
+      <text x="0" y="170">&bull; CI/CD Pipelines</text>
+      <text x="0" y="196">&bull; Cloud Deployment</text>
+    </g>
+  </g>
+</svg>
