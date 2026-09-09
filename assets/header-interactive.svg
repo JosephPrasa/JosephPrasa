@@ -1,0 +1,176 @@
+<svg viewBox="0 0 960 280" width="100%" height="280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Inter:wght@600;800&amp;display=swap');
+
+      @keyframes floatTitle {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.45; filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.4)); }
+        50% { opacity: 0.85; filter: drop-shadow(0 0 25px rgba(255, 0, 127, 0.6)); }
+      }
+      .script-title {
+        font-family: 'Great Vibes', 'Brush Script MT', 'Dancing Script', cursive;
+        animation: floatTitle 4.5s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .aurora-glow {
+        animation: pulseGlow 4s ease-in-out infinite;
+      }
+    </style>
+
+    <!-- Deep Midnight Obsidian Base -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04050d"/>
+      <stop offset="40%" stop-color="#07091a"/>
+      <stop offset="80%" stop-color="#120726"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+
+    <!-- Script Text Animated Gradient -->
+    <linearGradient id="scriptGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#ffd700;#ff007f;#00f2fe" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#ffd700">
+        <animate attributeName="stop-color" values="#ffd700;#ff007f;#00f2fe;#ffd700" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f;#00f2fe;#ffd700;#ff007f" dur="7s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Wave 1: Electric Cyan Gradient -->
+    <linearGradient id="wave1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#4facfe" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7928ca" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Wave 2: Neon Rose / Violet Gradient -->
+    <linearGradient id="wave2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#9b51e0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#ff007f;#ffd700;#00f2fe" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#7928ca"/>
+      <stop offset="100%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f;#ffd700;#00f2fe;#ff007f" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Laser Top Flare -->
+    <linearGradient id="laserBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#00f2fe" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#ffd700" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Dot Grid Pattern -->
+    <pattern id="dotPattern" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#00f2fe" fill-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect x="2" y="2" width="956" height="276" rx="20" fill="url(#bgGrad)"/>
+  <rect x="2" y="2" width="956" height="276" rx="20" fill="url(#dotPattern)"/>
+
+  <!-- ================= DYNAMIC CONTINUOUS MOVING WAVES ================= -->
+  <!-- Back Moving Wave -->
+  <path fill="url(#wave1Grad)">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="
+        M 0,210 Q 240,160 480,210 T 960,200 L 960,280 L 0,280 Z;
+        M 0,200 Q 240,240 480,180 T 960,220 L 960,280 L 0,280 Z;
+        M 0,210 Q 240,160 480,210 T 960,200 L 960,280 L 0,280 Z
+      " />
+  </path>
+
+  <!-- Front Moving Wave -->
+  <path fill="url(#wave2Grad)">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="
+        M 0,220 Q 240,250 480,200 T 960,230 L 960,280 L 0,280 Z;
+        M 0,230 Q 240,180 480,240 T 960,210 L 960,280 L 0,280 Z;
+        M 0,220 Q 240,250 480,200 T 960,230 L 960,280 L 0,280 Z
+      " />
+  </path>
+
+  <!-- Shimmering Glowing Border -->
+  <rect x="2" y="2" width="956" height="276" rx="20" fill="none" stroke="url(#borderGrad)" stroke-width="1.8">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Laser Top Scanning Beam -->
+  <line x1="-300" y1="2" x2="0" y2="2" stroke="url(#laserBeam)" stroke-width="3">
+    <animate attributeName="x1" from="-350" to="960" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="x2" from="-100" to="1260" dur="4.2s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Top Status Badge -->
+  <g transform="translate(330, 24)">
+    <rect x="0" y="0" width="300" height="28" rx="14" fill="#00f2fe" fill-opacity="0.08" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.45"/>
+    <circle cx="16" cy="14" r="4" fill="#00f2fe">
+      <animate attributeName="r" values="3.5;5.5;3.5" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="32" y="18" fill="#00f2fe" font-family="'Inter', sans-serif" font-size="10" font-weight="700" letter-spacing="2">✦ WELCOME TO MY REPOSITORY ✦</text>
+  </g>
+
+  <!-- Decorative Script Name: Prasanth P -->
+  <g class="script-title">
+    <text x="480" y="132" text-anchor="middle" fill="url(#scriptGrad)" font-size="74" font-weight="normal" letter-spacing="2" filter="url(#neonGlow)">Prasanth P</text>
+  </g>
+
+  <!-- High-End Sans-Serif Subtitle -->
+  <g transform="translate(480, 172)" text-anchor="middle" font-family="'Inter', -apple-system, Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="3.5">
+    <text x="-240" y="0" fill="#00f2fe">AI ENGINEER</text>
+    <text x="-150" y="-1" fill="#ffd700" font-size="11">✦</text>
+    <text x="-10" y="0" fill="#ff007f">FULL STACK DEVELOPER</text>
+    <text x="135" y="-1" fill="#c084fc" font-size="11">✦</text>
+    <text x="245" y="0" fill="#00f2fe">BACKEND ARCHITECT</text>
+  </g>
+
+  <!-- Capability Pills Row -->
+  <g transform="translate(100, 204)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="165" height="28" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#00f2fe" stroke-width="0.9" stroke-opacity="0.4"/>
+      <text x="82.5" y="18" text-anchor="middle" fill="#7dd3fc" font-family="'Inter', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">AI AGENTS &bull; LLM APPS</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(185, 0)">
+      <rect x="0" y="0" width="185" height="28" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#ff007f" stroke-width="0.9" stroke-opacity="0.4"/>
+      <text x="92.5" y="18" text-anchor="middle" fill="#f472b6" font-family="'Inter', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">MERN STACK &bull; FASTAPI</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(390, 0)">
+      <rect x="0" y="0" width="175" height="28" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#c084fc" stroke-width="0.9" stroke-opacity="0.4"/>
+      <text x="87.5" y="18" text-anchor="middle" fill="#c084fc" font-family="'Inter', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">AWS CLOUD &bull; DOCKER</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(585, 0)">
+      <rect x="0" y="0" width="170" height="28" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#ffd700" stroke-width="0.9" stroke-opacity="0.4"/>
+      <text x="85" y="18" text-anchor="middle" fill="#fde047" font-family="'Inter', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1">ECE GRADUATE (B.E.)</text>
+    </g>
+  </g>
+</svg>
