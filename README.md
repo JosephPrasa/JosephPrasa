@@ -2,7 +2,7 @@
 <!-- ✦ 1. OPENING ANIMATION // HOLOGRAPHIC AURORA HERO ✦ -->
 <!-- ================================================================= -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,10,20&height=270&section=header&text=PRASANTH%20P&fontSize=52&fontAlignY=38&animation=twinkling&fontColor=00f2fe&desc=AI%20ENGINEER%20%20%E2%9C%A6%20%20FULL%20STACK%20DEVELOPER%20%20%E2%9C%A6%20%20BACKEND%20ARCHITECT&descSize=15&descAlignY=58" width="100%" alt="Prasanth P Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=6,11,22&height=250&section=header&text=PRASANTH%20P&fontSize=52&fontAlignY=42&animation=scaleIn&fontColor=ffffff&desc=AI%20ENGINEER%20%20%E2%97%86%20%20FULL%20STACK%20DEVELOPER%20%20%E2%97%86%20%20BACKEND%20ARCHITECT&descSize=16&descAlignY=64&descColor=00DFD8" width="100%" alt="Prasanth P Header Banner" />
 </div>
 
 <!-- ================================================================= -->
